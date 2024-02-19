@@ -11,7 +11,11 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("connected to snek")
+    console.log("succesfully connected to gamer server")
+  });
+
+  conn.on("connect", () => {
+    console.log("Name: BWG")
   });
 
   function handleDisconnection() {
