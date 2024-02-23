@@ -2,7 +2,9 @@ const { connect } = require("http2");
 
 let connection;
 
-
+//Handles all user inputs. '\u0003' will exit out of game.
+//'w', 'a', 's', 'd' moves snake
+// 'q' and 'e' displays secret message above snake
 const setupInput =  (conn) => {
   connection = conn;
   const stdin = process.stdin;
