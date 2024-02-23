@@ -1,9 +1,11 @@
 const net = require("net");
 
+
+
 // establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: "localhost",
+    host:"localhost",
     port: 50541, // PORT number here,
   });
 
@@ -13,9 +15,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("succesfully connected to gamer server");
     conn.write("Name: BWG");
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 500)
   });
 
   conn.on("data", (data) => {
@@ -26,6 +25,8 @@ const connect = function () {
 
 
 console.log("Connecting ...");
-connect();
+//const connection = connect();
+//connect();
+//setupInput(connection);
 
-module.exports = "connect";
+module.exports = {connect};
