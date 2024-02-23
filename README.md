@@ -1,18 +1,14 @@
 # Snake Client Project
 
-Snake game is a very popular video game. It is a video game concept where the player maneuvers a dot and grows it by ‘eating’ pieces of food. As it moves and eats, it grows and the growing snake becomes an obstacle to smooth maneuvers. The goal is to grow it to become as big as possible without bumping into the side walls, or bumping into itself, upon which it dies.
-
-This is simply a multiplayer take on the genre.
-
-Before you can run this client, you will need to be running the server side which you can download and install from here. 
-
-## Final Product
-
-!["screenshot description"](#)
-!["screenshot description"](#)
-
+Snake is a game released in the late 90's. I still remember stealing my mothers old Nokia cell phone to play it. The goal of the game is to move the snake based on the key commands that you are instructed to use and eat the "fruit". The more you eat, the longer the snake gets. The game ends once you either crash into a wall or crash into a snake body part. 
 
 ## Getting Started
 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
+
+
+## Documentation
+
+- conn.on("connect"): connect to game server. diplay messages to client.
+- handleUserInput(key): handles user input. 'w', 'a', 's', 'd', will move snake. 'q' and 'e' will display secret message
